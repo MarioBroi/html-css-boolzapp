@@ -182,12 +182,6 @@ i {
     flex-direction: column;
 }
 
-.text-edit {
-    width: 100%;
-    height: 50px;
-    background-color: pink;
-}
-
 .user-text {
     display: flex;
     max-width: 400px;
@@ -218,6 +212,29 @@ i {
         padding: 0;
     }
 }
+
+/* /.current-chat */
+
+.text-write {
+    justify-content: space-between;
+    color: var(--boolzapp-utility-icon);
+    background-color: var(--boolzapp-light);
+
+    &>.txt-box {
+        align-self: center;
+        width: 80%;
+        padding: 1rem;
+        margin: 0.5rem;
+        border-radius: 10px;
+        background-color: var(--boolzapp-lighter);
+    }
+}
+
+.text-write i {
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
 
 /* /row-right */
 
