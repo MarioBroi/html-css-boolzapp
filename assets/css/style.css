@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px dashed black;
 }
 
 body {
@@ -83,6 +82,14 @@ i {
             padding: 1rem;
         }
     }
+
+    &>.notification-text {
+        padding-left: 1rem;
+
+        &>strong {
+            font-size: 16px;
+        }
+    }
 }
 
 /* /.notifications */
@@ -94,7 +101,7 @@ i {
         text-align: left;
         align-items: center;
         display: flex;
-        width: 97%;
+        width: 95%;
         padding: 0.5rem;
         margin: 0.5rem;
         border: none;
@@ -115,7 +122,6 @@ i {
 .chats {
     width: 100%;
     height: 100%;
-    background-color: yellow;
 
     &>.chats-row {
         border: 0.1px solid var(--boolzapp-light);
@@ -128,7 +134,7 @@ i {
         &>.user-name {
             flex: auto;
             font-size: 20px;
-            padding: 1.7rem 0;
+            padding: 2.1rem 0;
 
             &>.msg-preview {
                 font-size: 13px;
@@ -151,7 +157,6 @@ i {
 .row-right {
     width: 65%;
     height: 800px;
-    background-color: blue;
     flex-direction: column;
 }
 
