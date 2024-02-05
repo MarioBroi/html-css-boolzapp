@@ -128,15 +128,17 @@ i {
         &>.user-name {
             flex: auto;
             font-size: 20px;
-            padding: 1.5rem;
+            padding: 1.7rem 0;
 
             &>.msg-preview {
+                font-size: 13px;
                 color: var(--boolzapp-user-icon);
             }
         }
 
         &>.msg-time {
-            padding: 1.5rem;
+            padding-top: 1.5rem;
+            padding-right: 0.5rem;
             color: var(--boolzapp-user-icon);
         }
     }
@@ -170,10 +172,12 @@ i {
     }
 }
 
+/* /.contact-info */
+
 .current-chat {
     width: 100%;
     height: 100%;
-    background-color: yellowgreen;
+    background-image: url(../img/mine.jpg);
     display: flex;
     flex-direction: column;
 }
@@ -185,18 +189,34 @@ i {
 }
 
 .user-text {
-    width: 300px;
-    height: 150px;
-    background-color: lightgray;
+    display: flex;
+    max-width: 400px;
+    padding: 0.5rem;
     margin: 1rem;
     align-self: self-end;
+    border-radius: 10px;
+    background-color: var(--boolzapp-sender-msg);
+
+    &>i {
+        font-size: 15px;
+        color: var(--boolzapp-user-icon);
+        padding: 0;
+    }
 }
 
 .contact-text {
-    width: 300px;
-    height: 150px;
-    background-color: lightgray;
+    display: flex;
+    max-width: 400px;
+    padding: 0.5rem;
     margin: 1rem;
+    border-radius: 10px;
+    background-color: var(--boolzapp-lighter);
+
+    &>i {
+        font-size: 15px;
+        color: var(--boolzapp-user-icon);
+        padding: 0;
+    }
 }
 
 /* /row-right */
