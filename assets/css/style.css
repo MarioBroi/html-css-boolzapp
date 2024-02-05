@@ -142,6 +142,7 @@ i {
     }
 }
 
+/* /.chats */
 
 /* /row-left */
 
@@ -153,9 +154,20 @@ i {
 }
 
 .contact-info {
-    width: 100%;
-    height: 50px;
-    background-color: green;
+    padding: 0.9rem;
+    background-color: var(--boolzapp-light);
+
+    &>.user-name {
+        flex: auto;
+        font-size: 20px;
+        padding: 0.7rem;
+    }
+
+    &>.utility-icons {
+        align-self: center;
+
+        color: var(--boolzapp-user-icon);
+    }
 }
 
 .current-chat {
