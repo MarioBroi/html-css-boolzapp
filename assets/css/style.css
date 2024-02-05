@@ -22,17 +22,31 @@ body {
     --boolzapp-sender-msg: rgba(213, 249, 186, 1);
 }
 
+i {
+    font-size: 25px;
+    padding: 0 1rem;
+}
+
 /* #endregion Common */
 
 /* #region Utility */
 
 .container {
     height: 90%;
-    background-color: var(--boolzapp-light);
 }
 
 .d-flex {
     display: flex;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.icons {
+    color: var(--boolzapp-user-icon);
 }
 
 /* #endregion Utility */
@@ -42,14 +56,15 @@ body {
 .row-left {
     width: 35%;
     height: 800px;
-    background-color: red;
+    background-color: var(--boolzapp-light);
     flex-direction: column;
 }
 
 .user-details {
-    width: 100%;
-    height: 50px;
-    background-color: pink;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--boolzapp-light);
 }
 
 .notifications {
