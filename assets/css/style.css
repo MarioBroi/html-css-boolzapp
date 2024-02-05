@@ -251,7 +251,6 @@ i {
     .row-left-md {
         width: 10%;
         height: 800px;
-        background-color: red;
         flex-direction: column;
 
         &>.notifications {
@@ -260,6 +259,16 @@ i {
 
         &>.search {
             display: none;
+        }
+    }
+
+    .chats {
+        &>.chats-row {
+
+            &>.user-name,
+            .msg-time {
+                display: none;
+            }
         }
     }
 
@@ -276,6 +285,8 @@ i {
 
 }
 
+/* /responsive medium class */
+
 @media screen and (max-width: 540px) {
     .row-left-sm {
         display: none;
@@ -290,5 +301,7 @@ i {
     }
 
 }
+
+/* /responsive small class */
 
 /* #endregion Responsive media */
