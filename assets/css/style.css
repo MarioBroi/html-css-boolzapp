@@ -68,9 +68,19 @@ i {
 }
 
 .notifications {
-    width: 100%;
-    height: 50px;
+    align-items: center;
+    padding: 1rem;
     background-color: var(--boolzapp-notify);
+
+    &>.notifications-icon {
+        &>i {
+            font-size: 30px;
+            color: var(--boolzapp-notify);
+            background: var(--boolzapp-lighter);
+            border-radius: 50%;
+            padding: 1rem;
+        }
+    }
 }
 
 .search {
