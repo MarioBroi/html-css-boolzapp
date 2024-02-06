@@ -162,10 +162,6 @@ i {
     }
 }
 
-/* .chats-row-md {
-    display: none;
-} */
-
 /* /.chats */
 
 /* /row-left */
@@ -212,7 +208,7 @@ i {
     border-radius: 10px;
     background-color: var(--boolzapp-sender-msg);
 
-    &>i {
+    & i {
         font-size: 15px;
         color: var(--boolzapp-user-icon);
         padding: 0;
@@ -227,10 +223,21 @@ i {
     border-radius: 10px;
     background-color: var(--boolzapp-lighter);
 
-    &>i {
+    & i {
         font-size: 15px;
         color: var(--boolzapp-user-icon);
         padding: 0;
+    }
+}
+
+.right-chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &>span {
+        font-size: 10px;
+        color: var(--boolzapp-user-icon);
     }
 }
 
