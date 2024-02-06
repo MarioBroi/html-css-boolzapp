@@ -188,6 +188,11 @@ body {
 
 .icons {
     color: var(--boolzapp-user-icon);
+    font-size: 20px;
+
+    &>i {
+        padding: 0.5rem;
+    }
 }
 
 .user-profile {
@@ -238,6 +243,8 @@ body {
         background-color: var(--boolzapp-lighter);
 
         &>i {
+            font-size: 16px;
+            padding: 0.5rem;
             color: var(--boolzapp-user-icon);
         }
 
