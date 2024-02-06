@@ -8,6 +8,9 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 150, 136, 1) 0px, rgba(0, 150, 136, 1) 200px, rgba(221, 219, 210, 1) 200px, rgba(221, 219, 210, 1) 100%);
+    overflow: hidden;
 }
 
 :root {
@@ -19,6 +22,14 @@ body {
     --boolzapp-user-icon: rgba(177, 177, 177, 1);
     --boolzapp-utility-icon: rgba(107, 115, 118, 1);
     --boolzapp-sender-msg: rgba(213, 249, 186, 1);
+}
+
+.app-main {
+    width: 95vh;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto 2rem;
 }
 
 i {
@@ -253,9 +264,15 @@ i {
 /* #region Responsive media */
 
 @media screen and (max-width: 991px) {
+    .app-main {
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 0;
+    }
+
     .row-left-md {
-        width: 10%;
-        height: 800px;
+        width: 100px;
         flex-direction: column;
 
         &>.notifications {
