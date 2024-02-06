@@ -41,7 +41,7 @@ body {
     }
 
     .left {
-        width: 320px;
+        /* width: 400px; */
         height: 100%;
 
         &>div:not(:nth-child(4)) {
@@ -107,7 +107,7 @@ body {
 
 /* #endregion Common */
 
-/* #region Utility */
+/* #region Main */
 
 .avatar {
     width: 50px;
@@ -127,4 +127,31 @@ body {
     background-color: var(--boolzapp-light);
 }
 
-/* #region Utility */
+.notifications {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--boolzapp-notify);
+
+    &>.notifications-icon {
+        &>i {
+            font-size: 20px;
+            color: var(--boolzapp-notify);
+            background: var(--boolzapp-lighter);
+            border-radius: 50%;
+            padding: 1rem;
+        }
+    }
+
+    &>.notification-text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+
+        &>strong {
+            font-size: 16px;
+        }
+    }
+}
+
+/* #region Main */
