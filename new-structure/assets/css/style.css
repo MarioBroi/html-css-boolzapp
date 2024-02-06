@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+.debug * {
+    border: 1px dashed black;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     height: 100vh;
@@ -102,3 +106,25 @@ body {
 }
 
 /* #endregion Common */
+
+/* #region Utility */
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.icons {
+    color: var(--boolzapp-user-icon);
+}
+
+.user-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--boolzapp-light);
+}
+
+/* #region Utility */
