@@ -15,6 +15,7 @@ body {
     height: 100vh;
     background-image: linear-gradient(to bottom, rgba(0, 150, 136, 1) 0px, rgba(0, 150, 136, 1) 200px, rgba(221, 219, 210, 1) 200px, rgba(221, 219, 210, 1) 100%);
     overflow: hidden;
+    background-repeat: repeat no-repeat;
 }
 
 :root {
@@ -234,6 +235,7 @@ body {
     width: 100%;
     height: 100%;
     overflow-y: auto;
+    background-color: var(--boolzapp-lighter);
 
     &>.contacts {
         display: flex;
@@ -291,6 +293,8 @@ body {
 
     #app-main {
         margin: 0;
+        height: 100vh;
+        box-shadow: none;
 
         .left {
             height: 100%;
@@ -317,10 +321,14 @@ body {
     }
 
 }
+/* medium */
 
 @media screen and (max-width: 540px) {
+
     #app-main {
         margin: 0;
+        height: 100vh;
+        box-shadow: none;
 
         .left,
         .utility-icons,
@@ -335,5 +343,6 @@ body {
 
     }
 }
+/* small */
 
 /* #endregion Media */
