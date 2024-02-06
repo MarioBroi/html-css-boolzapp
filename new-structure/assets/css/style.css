@@ -290,6 +290,7 @@ body {
 @media screen and (max-width: 991px) {
 
     #app-main {
+        margin: 0;
 
         .left {
             height: 100%;
@@ -315,6 +316,24 @@ body {
 
     }
 
+}
+
+@media screen and (max-width: 540px) {
+    #app-main {
+        margin: 0;
+
+        .left,
+        .utility-icons,
+        .emotes,
+        .vocal {
+            display: none;
+        }
+
+        .prompt {
+            justify-content: center;
+        }
+
+    }
 }
 
 /* #endregion Media */
