@@ -75,8 +75,31 @@ body {
     .right {
         flex-grow: 1;
 
+        >.contact-profile {
+            padding: 1rem;
+            background-color: var(--boolzapp-light);
+
+            &>.user-name {
+                flex: auto;
+                font-size: 20px;
+                padding: 0.7rem;
+            }
+
+            &>.utility-icons {
+                align-self: center;
+                color: var(--boolzapp-user-icon);
+
+                &>i {
+                    font-size: 20px;
+                    padding: 0.5rem;
+                }
+            }
+        }
+
         >.contact-profile,
         >.prompt {
+            display: flex;
+            align-items: center;
             height: 70px;
         }
 
