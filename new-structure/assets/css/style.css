@@ -154,4 +154,26 @@ body {
     }
 }
 
+.search {
+    display: flex;
+    background-color: var(--boolzapp-light);
+
+    &>.btn-search {
+        width: 95%;
+        font-size: 16px;
+        text-align: left;
+        margin: 0.5rem;
+        border: none;
+        background-color: var(--boolzapp-lighter);
+
+        &>i {
+            color: var(--boolzapp-user-icon);
+        }
+
+        &>span {
+            padding-left: 0.5rem;
+        }
+    }
+}
+
 /* #region Main */
