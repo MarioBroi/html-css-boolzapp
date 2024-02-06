@@ -34,6 +34,7 @@ body {
     margin: 1rem auto 2rem;
     max-width: 1200px;
     display: flex;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 
     @media (max-width: 991px) {
         height: 100%;
@@ -276,6 +277,26 @@ body {
             padding-right: 0.5rem;
             color: var(--boolzapp-user-icon);
         }
+    }
+}
+
+.prompt {
+    justify-content: space-between;
+    color: var(--boolzapp-utility-icon);
+    background-color: var(--boolzapp-light);
+
+    &>.txt-box {
+        align-self: center;
+        width: 80%;
+        padding: 1rem;
+        margin: 0.5rem;
+        border-radius: 10px;
+        background-color: var(--boolzapp-lighter);
+    }
+
+    & i {
+        font-size: 25px;
+        padding: 1.5rem;
     }
 }
 
