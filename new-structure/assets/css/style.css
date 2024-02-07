@@ -209,25 +209,21 @@ body {
 
 .search {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--boolzapp-light);
 
-    &>.btn-search {
-        width: 95%;
+    & i {
         font-size: 16px;
-        text-align: left;
-        margin: 0.5rem;
-        border: none;
+        padding: 1rem;
+        color: var(--boolzapp-user-icon);
         background-color: var(--boolzapp-lighter);
+    }
 
-        &>i {
-            font-size: 16px;
-            padding: 0.5rem;
-            color: var(--boolzapp-user-icon);
-        }
-
-        &>span {
-            padding-left: 0.5rem;
-        }
+    & input {
+        width: 250px;
+        padding: 1rem;
+        border: none;
     }
 }
 
@@ -270,13 +266,12 @@ body {
     color: var(--boolzapp-utility-icon);
     background-color: var(--boolzapp-light);
 
-    &>.txt-box {
-        align-self: center;
-        width: 80%;
+    & input {
+        width: 500px;
+        border: none;
         padding: 1rem;
-        margin: 0.5rem;
         border-radius: 10px;
-        background-color: var(--boolzapp-lighter);
+        outline: none;
     }
 
     & i {
@@ -321,6 +316,7 @@ body {
     }
 
 }
+
 /* medium */
 
 @media screen and (max-width: 540px) {
@@ -343,6 +339,7 @@ body {
 
     }
 }
+
 /* small */
 
 /* #endregion Media */
